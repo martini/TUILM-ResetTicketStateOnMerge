@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<otrs_config version="1.0" init="Application">
+    <ConfigItem Name="Ticket::EventModulePost###ResetTicketStateOnMerge" Required="0" Valid="1">
+        <Description Translatable="1">Event module registration. Reset ticket state on merge.</Description>
+        <Group>TUILM-ResetTicketStateOnMerge</Group>
+        <SubGroup>Core</SubGroup>
+        <Setting>
+            <Hash>
+                <Item Key="Module">Kernel::System::Ticket::Event::ResetTicketStateOnMerge</Item>
+                <Item Key="Transaction">1</Item>
+            </Hash>
+        </Setting>
+    </ConfigItem>
+</otrs_config>
